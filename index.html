@@ -47,13 +47,12 @@
 
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
+        <div class="bg-gradient-primary sidebar sidebar-dark accordion">
+        <ul class="navbar-nav" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <!-- <i class="fas fa-laugh-wink"></i> -->
-                    <img src="img/logoimg.png" />
+                    <img src="img/CarWashFX.png" id="logoImg"/>
                 </div>
             </a>
             <!-- Heading -->
@@ -156,12 +155,13 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-            <div style="overflow: visible;">
-                <img src="img/cloudImg.png" width="250px">
+            <div class="sidebar-footer">
+                <img src="img/cloudImg.png" id="sidebar-footer-img">
             </div>
 
 
         </ul>
+    </div>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -186,6 +186,9 @@
                                         <div id='date' class="navbar-nav"></div>
                                     </h6>
                                 </div>
+                                <a href="login.html" class="btn btn-primary" style="border-radius: 80px;">
+                                    <span class="text" style="font-weight: bold;">Login</span>
+                                </a>
                             </div>
                         </div>
                         <!-- </div> -->
@@ -249,7 +252,8 @@
                                 </div>
 
                             </div>
-                            <img src="img/carImage.png" width="50%">
+                            <img src="img/carImage.png" id="carImg" width="50%">
+                            
                         </div>
                     </div>
 
@@ -279,9 +283,9 @@
                                                     <td>
                                                         <div class="custom-control custom-switch">
                                                             <input type="checkbox" class="custom-control-input"
-                                                                id="customSwitch21">
+                                                                id="customSwitch11">
                                                             <label class="custom-control-label"
-                                                                for="customSwitch21"></label>
+                                                                for="customSwitch11"></label>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -293,9 +297,9 @@
                                                 <td>
                                                     <div class="custom-control custom-switch">
                                                         <input type="checkbox" class="custom-control-input"
-                                                            id="customSwitch22">
+                                                            id="customSwitch12">
                                                         <label class="custom-control-label"
-                                                            for="customSwitch22"></label>
+                                                            for="customSwitch12"></label>
                                                     </div>
                                                 </td>
                                             </tbody>

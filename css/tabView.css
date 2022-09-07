@@ -15,10 +15,6 @@
     min-width: 100%;
 }
 
-.nav-tabs-custom .nav .nav-tabs{
-    
-  }
-
 .nav li {
     list-style: none outside none;
     float: left;
@@ -41,7 +37,7 @@
 
 .nav li:before,
 .nav li:after {
-    background: lightgrey;
+    background: transparent;
     width: 10px;
     height: 10px;
 }
@@ -72,14 +68,19 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background: lightgrey;
+    background: transparent;
     z-index: 2;
+}
+
+.nav a:after {
+    background: transparent;
 }
 
 .nav .active a:before,
 .nav .active a:after {
     background: lightgrey;
 }
+
 
 .nav a:before {
     left: -20px;
@@ -99,6 +100,8 @@
     border-radius: 0px 0px 10px 0px;
 }
 
+
+
 .nav li:first-child .active:before {
     background-color: white;
     height: 100%;
@@ -106,7 +109,7 @@
 }
 
 .nav li:last-child a:after {
-    background-color: lightgrey;
+    background-color: transparent;
     height: 100%;
     border-radius: 0px 0px 0px 10px;
 }
