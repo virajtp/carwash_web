@@ -2061,6 +2061,15 @@ pre code {
 
 @media (max-width: 575.98px) {
 
+  .navContainer {
+    font-size: small;
+  }
+
+  .navContainer h4{
+    max-width: 80%;
+    font-size: small;
+  }
+
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -2074,6 +2083,14 @@ pre code {
 }
 
 @media (max-width: 767.98px) {
+  .navContainer h4{
+    /* max-width: 100%; */
+    font-size:medium;
+  }
+  
+  .navContainer #sidebarToggle{
+    visibility: hidden;
+  }
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -2087,6 +2104,15 @@ pre code {
 }
 
 @media (max-width: 991.98px) {
+
+
+  .navContainer {
+    max-width: 80%;
+  }
+
+  .navContainer h4{
+    font-size:larger;
+  }
 
   #carImg {
     visibility: hidden;
@@ -4572,7 +4598,6 @@ x .custom-checkbox .custom-control-label::before {
 .navContainer {
   padding-top: 10px;
   margin-top: 10px;
-  /* margine-left: 30px; */
   margin-left: 50px;
 }
 
@@ -4587,7 +4612,6 @@ x .custom-checkbox .custom-control-label::before {
 
 .navContainer h4 {
   color: #000;
-  font-weight: 90px;
   font-weight: bold;
 }
 
@@ -11603,6 +11627,7 @@ a:focus {
 }
 
 @media (min-width: 576px) {
+
   .topbar .dropdown {
     position: relative;
   }
@@ -11650,7 +11675,7 @@ a:focus {
   min-height: 100vh;
 }
 
-.sidebar #accordionSidebar{
+.sidebar #accordionSidebar {
   padding-bottom: 120px;
 }
 
@@ -11660,6 +11685,15 @@ a:focus {
 
 .sidebar .nav-item {
   position: relative;
+}
+
+.sidebar .nav-item #icons {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.sidebar .nav-item #smallIcons {
+  width: 25px;
 }
 
 .sidebar .nav-item:last-child {
@@ -11848,6 +11882,7 @@ a:focus {
   .sidebar {
     width: 14rem !important;
   }
+
   .sidebar-footer #sidebar-footer-img {
     max-width: 14rem;
   }
@@ -12801,4 +12836,3 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   position: absolute;
   bottom: 0px;
 }
-
