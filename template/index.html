@@ -9,67 +9,49 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Effects</title>
+    <title>Wash Experience Configuration Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
-    <link href="css/tabView.css" rel="stylesheet">
+    <link href="../static/css/sb-admin-2.css" rel="stylesheet">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!--JQuery Library-->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script> -->
-
-    <!--Font Awesome for the icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(function () {
-            $('#myTab a').click(function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
-        });
-
+            $('#func').load('sideBar.html')
+        })
     </script>
-    <script>
-        function startDate() {
-            var d = new Date();
-            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            document.getElementById("date").innerHTML = d.getHours() + ":" + d.getMinutes() + " at " + d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear() + "  ";
-        }
-        startDate();
 
-    </script>
 </head>
+<script>
+    function startDate() {
+        var d = new Date();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.getElementById("date").innerHTML = d.getHours() + ":" + d.getMinutes() + " at " + d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear() + "  ";
+    }
+    startDate();
+</script>
 
-
-<body id="page-top" onload='startDate()'">
+<body id="page-top" onload='startDate()'>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
 
 
-               <!-- Sidebar -->
+        <!-- Sidebar -->
         <div class="bg-gradient-primary sidebar sidebar-dark accordion">
         <ul class="navbar-nav" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img src="img/CarWashFX.png" id="logoImg"/>
+                    <img src="../static/img/CarWashFX.png" id="logoImg"/>
                 </div>
             </a>
             <!-- Heading -->
@@ -79,23 +61,23 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="index.html">
-                    <img src="img/Icon-function.png" id="icons">
+                    <img src="../static/img/Icon-function.png" id="icons">
                     <span>Functions</span>
                 </a>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="effects.html">
-                    <img src="img/Icon-effects.png" id="icons">
+                    <img src="../static/img/Icon-effects.png" id="icons">
                     <span>Effects</span>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="baseExperience.html">
-                    <img src="img/Icon-baseExperience.png" id="icons">
+                    <img src="../static/img/Icon-baseExperience.png" id="icons">
                     <span>Base Experiences</span>
                 </a>
             </li>
@@ -117,26 +99,26 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="manageSiteInfo">
-                    <img src="img/icon-manageSiteInfo.png" id="icons">
+                    <img src="../static/img/icon-manageSiteInfo.png" id="icons">
                     <span>Manage Site Info</span>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="setUpDevice.html">
-                    <img src="img/Icon-delegateAccess.png" id="icons">
+                    <img src="../static/img/Icon-delegateAccess.png" id="icons">
                     <span>Set-up Device</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="settings.html">
-                    <img src="img/Icon-settings.png" id="smallIcons">
+                    <img src="../static/img/Icon-settings.png" id="smallIcons">
                     <span>Settings</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="viewDeviceStat.html">
-                    <img src="img/Icons-viewDeviceStat.png" id="smallIcons">
+                    <img src="../static/img/Icons-viewDeviceStat.png" id="smallIcons">
                     <span>View Device Stat</span></a>
             </li>
             <br />
@@ -151,26 +133,26 @@
 
             <li class="nav-item">
                 <a class="nav-link" href="delegateAccess.html">
-                    <img src="img/Icon-delegateAccess.png" id="icons">
+                    <img src="../static/img/Icon-delegateAccess.png" id="icons">
                     <span>Delegate Access</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="knowledge.html">
-                    <img src="img/Icons-knowledge.png" id="smallIcons">
+                    <img src="../static/img/Icons-knowledge.png" id="smallIcons">
                     <span>Knowledge Base</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="message.html">
-                    <img src="img/Icon-message.png" id="smallIcons">
+                    <img src="../static/img/Icon-message.png" id="smallIcons">
                     <span>Message</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
             <div  style="z-index: 900;" class="sidebar-footer">
-                <img src="img/cloudImg.png" id="sidebar-footer-img">
+                <img src="../static/img/cloudImg.png" id="sidebar-footer-img">
             </div>
 
 
@@ -188,20 +170,20 @@
                     <div class="col">
 
                         <div class="square">
-                            <div class="navContainer">
-                                <div class="row">
-                                    <!-- Sidebar Toggler (Sidebar) -->
-                                    <div> 
-                                        <button class="fas fa-bars" id="sidebarToggle"></button>
-                                    </div>
-                                    <div>
-                                        <h4>Wash Experience Configuration Dashboard</h4>
-                                        <h6>
-                                            <div id='date' class="navbar-nav"></div>
-                                        </h6>
-                                    </div>
+                        <div class="navContainer">
+                            <div class="row">
+                                <!-- Sidebar Toggler (Sidebar) -->
+                                <div>
+                                    <button class="fas fa-bars" id="sidebarToggle"></button>
+                                </div>
+                                <div>
+                                    <h4>Wash Experience Configuration Dashboard</h4>
+                                    <h6>
+                                        <div id='date' class="navbar-nav"></div>
+                                    </h6>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
 
@@ -213,7 +195,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="../static/img/undraw_profile.svg">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">User Name</span>
                             </a>
                             <!-- Dropdown - User Information -->
@@ -238,7 +220,9 @@
                                 </a>
                             </div>
                         </li>
+
                     </ul>
+
                 </nav>
                 <!-- End of Topbar -->
 
@@ -247,100 +231,129 @@
 
                     <div class="card shadow mb-4" style="margin: 20px;">
                         <!-- Card Body -->
-                        <div class="row"  style="margin-left: -0.75rem;">
+                        <div class="row" style="margin-left: -0.75rem;">
                             <div class="col-lg-6 mb-6">
-                                <img src="img/cornerImg.png" width="15%" />
+                                <img src="../static/img/cornerImg.png" width="15%" />
                                 <div class="title-card-body">
-                                    <h1>Effects</h1>
+                                    <h1>FUNCTIONS</h1>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla a nam
                                         fugiat dicta tempore reiciendis sunt, facilis ducimus assumenda hic excepturi
                                         illo, natus, tempora libero veritatis animi? Inventore, aspernatur!</p>
                                     <a href="#" class="btn btn-primary" style="border-radius: 80px;">
                                         <span class="text" style="font-weight: bold;">Read More</span>
                                     </a>
+                                    
+                                <a href="login.html" class="btn btn-primary" style="border-radius: 80px;">
+                                    <span class="text" style="font-weight: bold;">Login</span>
+                                </a>
                                 </div>
+
                             </div>
-                            <img src="img/carImage.png" id="carImg" width="50%">
+                            <img src="../static/img/carImage.png" id="carImg" width="50%">
+                            
                         </div>
                     </div>
-                    <div class="col-lg-12 mb-4">
-                        <div class="card shadow mb-4">
-                            <div class="card-body">
-                    <div class="col-lg-12 mb-4">
-                        <div class="nav-tabs-custom">
-                            <ul class="nav nav-tabs">
-                                <li><a href="#marcketMsg" data-toggle="tab">Marketing Messages</a></li>
-                                <li class="active"><a href="#sound" data-toggle="tab">Sound Effects</a></li>
-                                <li><a href="#music" data-toggle="tab">Music</a></li>
-                                <li><a href="#directional" data-toggle="tab">Directional</a></li>
-                                <li><a href="#informational" data-toggle="tab">Informational</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane" id="marcketMsg">
-                                    <h3>Marketing Messages</h3>
-                                </div>
-                                <div class="active tab-pane" id="sound">
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+                            <h6 class="m-0 font-weight-bold text-primary" style="padding: 1.25rem;">Customer Inputs</h6>
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table align-items-center table-flush">
                                             <thead class="thead-light">
-                                                <th>Effect Name</th>
-                                                <th>Digital Asset Upload</th>
-                                                <th>Runtime</th>
-                                                <th>Action</th>
+                                                <th>Ref</th>
+                                                <th>Description</th>
+                                                <th>State</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                        <label class="form-control bg-light border-1 small" style="margin-top: 8px;">
-                                                            Drive Forward
-                                                        </label>
+                                                    <td>1</td>
+                                                    <td> <input type="text" class="form-control bg-light border-0 small"
+                                                            placeholder="Enter Description" aria-label="Search"
+                                                            aria-describedby="basic-addon2" disabled>
                                                     </td>
                                                     <td>
-                                                        <select name="daUpload" class="form-control dropdown bg-light" id="daUpload" style="max-width: 75%;">
-                                                            <option value="0">Editor</option>
-                                                            <option value="1">Viewer</option>
-                                                            <option value="2">Sales Person</option>
-                                                        </select>
-                                                    </td>
-                                                    <td style="text-align: center;">
-                                                        <label>00:00</label>
-                                                    </td>
-                                                    <td>
-                                                        <div class="row" style="justify-content: space-evenly;">
-                                                        <a href="#"> <img src="img/Icon-14.png"
-                                                                id="btn-png"></a>
-                                                        <a href="#"> <img src="img/Icon-15.png"
-                                                                id="btn-png"></a>
-                                                        <a href="#"> <img src="img/Icon-13.png"
-                                                                id="btn-png"></a>
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="customSwitch11">
+                                                            <label class="custom-control-label"
+                                                                for="customSwitch11"></label>
                                                         </div>
                                                     </td>
                                                 </tr>
-
+                                                <td>2</td>
+                                                <td> <input type="text" class="form-control bg-light border-0 small"
+                                                        placeholder="Enter Description" aria-label="Search"
+                                                        aria-describedby="basic-addon2">
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch12">
+                                                        <label class="custom-control-label"
+                                                            for="customSwitch12"></label>
+                                                    </div>
+                                                </td>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="row" style="justify-content: space-between;">
-                                        <label>Last Updated: February 7,2022  Modified by: User123</label>
-                                            <a href="#" class="btn btn-primary" style="border-radius: 10px;">
-                                                <span class="text">Reboot System</span>
-                                            </a>
-                                        </div>
                                 </div>
-                                <div class="tab-pane fade in" id="music">
-                                    <h3>Music</h3>
-                                </div>
-                                <div class="tab-pane fade in" id="directional">
-                                    <h3>Directional</h3>
-                                </div>
-                                <div class="tab-pane fade in" id="informational">
-                                    <h3>Informational</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <h6 class="m-0 font-weight-bold text-primary" style="padding: 1.25rem;">Wash Operations</h6>
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table align-items-center table-flush">
+                                            <thead class="thead-light">
+                                                <th>Ref</th>
+                                                <th>Description</th>
+                                                <th>State</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td> <input type="text" class="form-control bg-light border-0 small"
+                                                            placeholder="Enter Description" aria-label="Search"
+                                                            aria-describedby="basic-addon2" disabled>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="customSwitch21">
+                                                            <label class="custom-control-label"
+                                                                for="customSwitch21"></label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td>2</td>
+                                                <td> <input type="text" class="form-control bg-light border-0 small"
+                                                        placeholder="Enter Description" aria-label="Search"
+                                                        aria-describedby="basic-addon2">
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customSwitch22">
+                                                        <label class="custom-control-label"
+                                                            for="customSwitch22"></label>
+                                                    </div>
+                                                </td>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div></div></div>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -348,10 +361,8 @@
             </div>
             <!-- End of Main Content -->
 
-
         </div>
         <!-- End of Content Wrapper -->
-
 
     </div>
     <!-- End of Page Wrapper -->
@@ -382,21 +393,21 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../static/../static/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="../static/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="../static/../static/js/demo/chart-area-demo.js"></script>
+    <script src="../static/../static/js/demo/chart-pie-demo.js"></script>
 
 </body>
 
